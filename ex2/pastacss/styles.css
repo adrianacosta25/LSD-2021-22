@@ -1,0 +1,33 @@
+ div{
+
+    /* O "important" prevalece sempre, define as regras (COMENTARIO EM CSS) */
+        width: 400px;
+        height: 400px;
+        background-color: royalblue; 
+        margin-left: 20px;
+        margin-top: 40px;
+        margin-bottom: 50px;
+
+        margin: 40px 25px 50px 20px;
+    } 
+
+    /* definir "class" em CSS */
+     .par { 
+         background-color: red;
+    } 
+
+    p {
+        font: 12px;
+        margin: 12px;
+    }
+
+    /* definir "paragrafo" colocamos "p" e para definir uma regra colocamos "par p" em CSS */
+     .par p {
+         background-color: green;
+    }
+
+    .par p span { 
+        background-color: blueviolet; 
+    }
+
+    

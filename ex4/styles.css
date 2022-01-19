@@ -1,0 +1,118 @@
+
+/* Usamos (.) quando nos referimos a uma "class" e sem ( ) quando é uma "tag"*/
+
+@font-face{ 
+    font-family: 'a-minha-fonte';
+    src: url(fonts/Pacifico-Regular.ttf);
+} /* criar uma fonte nova */
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.wrapper{
+    width: 100%;
+    height: 1000px;
+    background: bisque;
+}
+
+
+
+header{
+    width: 100%;
+    height: 50px;
+    background: rgb(255,255,255); /* representar cor em */
+    float: left;                    /* ou com #FFFFFF */
+    padding-top: 15px;
+}                                   
+
+
+.hero{
+    width: 100%;
+    height: 550px;
+    background-image: url('images/banner.jpg'); /* ou '../assets/images/banner.jpg' se o caminho fosse 'ex4/assets/images/banner' */
+    background-position: top center;
+    float: left;
+}
+
+
+.main-content{
+    width: 100%;
+    height: 300px;
+    float: left; /* garante que as box's vão para de baixo umas das outras */
+    background:rgb(250, 180, 89);
+}
+
+
+.box-content{
+    width: 100%;
+    background: beige; /* cor de fundo */
+    color: #fcdcd6; /* cor do texto */
+    height: 200px;
+    float: left;
+}
+
+
+section.article-section{
+    width: 100%;
+    background: white;
+    height: 200px;
+    float: left;
+}
+
+
+
+
+header div{ 
+    text-align: center;
+     /* alinhar texto na mesma altura no DIV e nas 3 colunas */
+}
+
+
+header div:first-child{ /* selecionar (1) */
+    background: black;
+    width: 100px;
+    height: 100px;
+    float: left;
+    color: #fff;
+}
+
+header div:nth-child(2){
+    width: calc(100% - 200px);
+    float: left;
+    color: black;
+    font-family: 'a-minha-fonte';
+    font-size: 20px;
+
+}
+
+
+header div:nth-child(3){ /* selecionar (3)*/
+    background: white;
+    width: 85px;
+    height: 100px;
+    float: right;
+    color: black;
+    padding-right: 15px;
+}
+
+
+
+header div button{
+    width: 100%;
+    height: 35px;
+/* background-color: black;  Quando atribuir o "border-radius" (arredondar cantos) retiramos o "background color"*/
+    color:black;
+    border: 2px solid #727a82;
+    border-radius: 10px;
+}
+
+
+
+footer{ /* FOOTER*/
+    width: 100%;
+    height: 300px;
+    float: left;
+    background: #000;
+}
